@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<title>โบร์ชัวร์ทริปอัมพวา-แม่กลอง 24-25 ต.ค. (ฉบับภาพถ่ายจริง)</title>
+<style>
+  @page { size: A4; margin: 8mm; }
+  * { box-sizing: border-box; -webkit-print-color-adjust: exact !important; print-color-adjust: exact !important; }
+  body { font-family: 'Tahoma', 'Sarabun', sans-serif; color: #2D3237; background: #FAF8F5; margin: 0; padding: 12px; line-height: 1.42; }
+  .container { max-width: 840px; margin: 0 auto; background: #FFFFFF; padding: 18px; border-radius: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.08); }
+  
+  /* Header Banner */
+  .banner { background: linear-gradient(135deg, #0D4C5C 0%, #16697A 100%); color: #FFFFFF; padding: 20px; text-align: center; border-bottom: 5px solid #C58B2B; border-radius: 8px; margin-bottom: 14px; }
+  .banner-sub { color: #EBC373; font-size: 9.5pt; font-weight: bold; letter-spacing: 1.2px; }
+  .banner-title { font-size: 19pt; font-weight: bold; margin: 5px 0; color: #FFFFFF; }
+  .banner-desc { color: #FFE196; font-size: 11.5pt; font-weight: bold; margin: 4px 0; }
+  .banner-route { color: #E0F2F7; font-size: 9.5pt; margin-top: 5px; }
+
+  /* Real Photo Cards Grid (4 Columns) */
+  .gallery-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; margin-bottom: 16px; }
+  .photo-card { background: #FBF9F5; border: 1px solid #E0DCD3; border-radius: 8px; overflow: hidden; text-align: center; display: flex; flex-direction: column; }
+  .img-wrap { position: relative; width: 100%; height: 115px; overflow: hidden; background: #E5E0D8; }
+  .img-wrap img { width: 100%; height: 100%; object-fit: cover; display: block; }
+  .img-badge { position: absolute; bottom: 0; left: 0; right: 0; padding: 4px 6px; color: #FFF; font-size: 8.5pt; font-weight: bold; text-shadow: 0 1px 2px rgba(0,0,0,0.6); }
+  .bg-red { background: rgba(166, 61, 64, 0.88); }
+  .bg-gold { background: rgba(197, 139, 43, 0.90); }
+  .bg-teal { background: rgba(13, 76, 92, 0.88); }
+  .bg-green { background: rgba(46, 111, 64, 0.88); }
+  .photo-caption { padding: 8px; flex: 1; }
+  .photo-title { color: #0D4C5C; font-weight: bold; font-size: 9.5pt; margin-bottom: 3px; }
+  .photo-desc { color: #555; font-size: 8pt; line-height: 1.3; }
+
+  /* Day Headers */
+  .day-header { color: #FFFFFF; padding: 9px 15px; font-size: 11.5pt; font-weight: bold; border-radius: 6px 6px 0 0; margin-top: 12px; }
+  .day1-bg { background: #A63D40; }
+  .day2-bg { background: #2E6F40; }
+
+  /* Schedule Tables */
+  table.sched { width: 100%; border-collapse: collapse; margin-bottom: 12px; font-size: 9.2pt; }
+  table.sched td { border: 1px solid #E2E2E2; padding: 7px 11px; vertical-align: top; }
+  .t-d1 { width: 20%; background: #F6ECEB; color: #A63D40; font-weight: bold; }
+  .t-d2 { width: 20%; background: #E9F4EC; color: #2E6F40; font-weight: bold; }
+  .act-title { color: #0D4C5C; font-weight: bold; font-size: 9.8pt; margin-bottom: 2px; }
+  .act-desc { color: #333; font-size: 8.8pt; }
+  .map-link { color: #A63D40; text-decoration: none; font-weight: bold; font-size: 8.5pt; }
+
+  /* Mid-Brochure Real Photo Strip for Day 2 */
+  .day2-photo-strip { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; margin: 12px 0; }
+  .strip-card { border-radius: 7px; overflow: hidden; border: 1px solid #D8E2DC; background: #F9FBF9; display: flex; align-items: center; }
+  .strip-card img { width: 95px; height: 68px; object-fit: cover; flex-shrink: 0; }
+  .strip-info { padding: 6px 9px; font-size: 8pt; color: #2D3237; }
+  .strip-info b { color: #2E6F40; font-size: 8.8pt; display: block; margin-bottom: 2px; }
+
+  /* Footer Tips */
+  .footer-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-top: 12px; }
+  .tip-box1 { background: #FFFBF2; border: 1px solid #D8C39D; border-radius: 6px; padding: 10px 12px; font-size: 8.8pt; }
+  .tip-box2 { background: #F2F8FA; border: 1px solid #B5D3DC; border-radius: 6px; padding: 10px 12px; font-size: 8.8pt; }
+  .tip-h1 { color: #B87D14; font-weight: bold; font-size: 9.8pt; margin-bottom: 4px; }
+  .tip-h2 { color: #0D4C5C; font-weight: bold; font-size: 9.8pt; margin-bottom: 4px; }
+</style>
+</head>
+<body>
+<div class="container">
+
+  <div class="banner">
+    <div class="banner-sub">✦ EXCLUSIVE WEEKEND GETAWAY BROCHURE ✦</div>
+    <div class="banner-title">มนต์เสน่ห์สายน้ำแม่กลอง &amp; อัมพวา 2 วัน 1 คืน</div>
+    <div class="banner-desc">วันเสาร์ที่ 24 – วันอาทิตย์ที่ 25 ตุลาคม | ที่พักริมน้ำ: โรงแรมบ้านศิริพร รีสอร์ท</div>
+    <div class="banner-route">🚗 จุดเริ่มต้น: สนามบินดอนเมือง (10.30 น.) &nbsp;•&nbsp; เดินทางกลับกรุงเทพฯ: วันอาทิตย์หลัง 15.00 น.</div>
+  </div>
+
+  <!-- 4 Real Photo Destination Cards -->
+  <div class="gallery-grid">
+    <!-- Card 1: Real Thai Seafood Photo -->
+    <div class="photo-card">
+      <div class="img-wrap">
+        <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Tom_yum_kung_maenam.jpg?width=600" alt="กุ้งแม่น้ำ ซีฟู้ดแม่กลอง">
+        <div class="img-badge bg-red">🦀 แดงอาหารทะเล เจ้าเก่า</div>
+      </div>
+      <div class="photo-caption">
+        <div class="photo-title">ซีฟู้ดแม่กลองระดับตำนาน</div>
+        <div class="photo-desc">ตรงจากดอนเมืองไปทานกุ้งแม่น้ำทอดกระเทียม ปูไข่นึ่ง หอยหลอดผัดฉ่า</div>
+      </div>
+    </div>
+
+    <!-- Card 2: Real Maeklong Railway Market Photo -->
+    <div class="photo-card">
+      <div class="img-wrap">
+        <img src="watermarked_img_5072595912201732183.jpg" onerror="this.onerror=null;this.src='https://commons.wikimedia.org/wiki/Special:FilePath/Maeklong_Railway_Market_01.jpg?width=600';" alt="ตลาดร่มหุบ แม่กลอง">
+        <div class="img-badge bg-gold">🚂 Unseen ตลาดร่มหุบ</div>
+      </div>
+      <div class="photo-caption">
+        <div class="photo-title">รถไฟวิ่งผ่านตลาดร่มหุบ</div>
+        <div class="photo-desc">แวะบ้านพี่แจ้ว ต่อด้วยชมรถไฟผ่านตลาดระยะประชิด &amp; ไหว้หลวงพ่อบ้านแหลม</div>
+      </div>
+    </div>
+
+    <!-- Card 3: Real Amphawa Floating Market Photo -->
+    <div class="photo-card">
+      <div class="img-wrap">
+        <img src="watermarked_img_4220099760173360132.jpg" onerror="this.onerror=null;this.src='https://commons.wikimedia.org/wiki/Special:FilePath/Amphawa_Floating_Market.jpg?width=600';" alt="ตลาดน้ำอัมพวา">
+        <div class="img-badge bg-teal">🛶 ตลาดน้ำอัมพวา &amp; หิ่งห้อย</div>
+      </div>
+      <div class="photo-caption">
+        <div class="photo-title">ตลาดน้ำอัมพวายามเย็น</div>
+        <div class="photo-desc">เดินชิลริมคลอง ชิมซีฟู้ดปิ้งย่างจากเรือพาย และล่องเรือชมหิ่งห้อยยามค่ำ</div>
+      </div>
+    </div>
+
+    <!-- Card 4: Real Wat Bang Kung Photo -->
+    <div class="photo-card">
+      <div class="img-wrap">
+        <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Wat_Bang_Kung_-_01.jpg?width=600" alt="โบสถ์ปรกโพธิ์ วัดบางกุ้ง">
+        <div class="img-badge bg-green">🙏 ตักบาตรริมน้ำ &amp; วัดบางกุ้ง</div>
+      </div>
+      <div class="photo-caption">
+        <div class="photo-title">ตักบาตรบ้านพี่แจ้ว &amp; วัดดัง</div>
+        <div class="photo-desc">ใส่บาตรศาลาริมน้ำบ้านพี่แจ้ว ไหว้โบสถ์ปรกโพธิ์ วัดบางกุ้ง &amp; คาเฟ่ริมน้ำ</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- DAY 1 SCHEDULE -->
+  <div class="day-header day1-bg">🗓️ DAY 1 : วันเสาร์ที่ 24 ตุลาคม — แดงอาหารทะเล • บ้านพี่แจ้ว • ตลาดร่มหุบ • ตลาดน้ำอัมพวา</div>
+  <table class="sched">
+    <tr>
+      <td class="t-d1">10.30 – 12.15 น.</td>
+      <td>
+        <div class="act-title">ออกเดินทางจาก ท่าอากาศยานดอนเมือง ➔ มุ่งหน้าสู่ ร้านแดงอาหารทะเล</div>
+        <div class="act-desc">เดินทางผ่านทางด่วนดอนเมืองโทลล์เวย์เชื่อมต่อทางพิเศษเฉลิมมหานคร (ดาวคะนอง–พระราม 2) ตรงไปยังร้านอาหารทันทีโดยไม่ต้องแวะฝากสัมภาระที่โรงแรม</div>
+      </td>
+    </tr>
+    <tr>
+      <td class="t-d1">12.15 – 13.30 น.</td>
+      <td style="background:#FAF7F5;">
+        <div class="act-title">รับประทานมื้อเที่ยง ณ ร้านแดงอาหารทะเล (เจ้าเก่า)</div>
+        <div class="act-desc">อิ่มอร่อยกับเมนูซิกเนเจอร์: กุ้งแม่น้ำทอดกระเทียมมันเยิ้ม, ปูไข่นึ่ง, หอยหลอดผัดฉ่า, ข้าวผัดปู และต้มยำรวมมิตร<br>
+        📍 พิกัด: <a class="map-link" href="https://maps.app.goo.gl/YGtNXf9Y1cF2Ctgj6">https://maps.app.goo.gl/YGtNXf9Y1cF2Ctgj6</a></div>
+      </td>
+    </tr>
+    <tr>
+      <td class="t-d1">13.30 – 14.15 น.</td>
+      <td>
+        <div class="act-title">Check-in เข้าที่พัก ณ โรงแรมบ้านศิริพร รีสอร์ท</div>
+        <div class="act-desc">นำสัมภาระเข้าห้องพักบรรยากาศร่มรื่นริมแม่น้ำแม่กลอง ล้างหน้าล้างตาและพักผ่อนตามอัธยาศัย<br>
+        📍 พิกัด: <a class="map-link" href="https://maps.app.goo.gl/zjCbTdc5bZ2hW98y9">https://maps.app.goo.gl/zjCbTdc5bZ2hW98y9</a></div>
+      </td>
+    </tr>
+    <tr>
+      <td class="t-d1">14.15 – 15.00 น.</td>
+      <td style="background:#FAF7F5;">
+        <div class="act-title">แวะเยี่ยมบ้านพี่แจ้ว (แถวศาลเจ้ากวนอู)</div>
+        <div class="act-desc">เดินทางไปพบปะพูดคุยและเยี่ยมเยียนบ้านพี่แจ้วตามอัธยาศัย พร้อมนัดหมายเวลาตักบาตรที่ศาลาริมน้ำสำหรับเช้าวันอาทิตย์<br>
+        📍 พิกัด: <a class="map-link" href="https://maps.app.goo.gl/oYZwKapqmzNXeMMD8">https://maps.app.goo.gl/oYZwKapqmzNXeMMD8</a></div>
+      </td>
+    </tr>
+    <tr>
+      <td class="t-d1">15.00 – 16.00 น.</td>
+      <td>
+        <div class="act-title">ชมขบวนรถไฟวิ่งผ่าน ตลาดร่มหุบ &amp; ไหว้หลวงพ่อบ้านแหลม วัดเพชรสมุทรวรวิหาร</div>
+        <div class="act-desc">• จอดรถที่วัดเพชรสมุทรฯ กราบขอพรหลวงพ่อบ้านแหลม พระพุทธรูปคู่เมืองสมุทรสงคราม แล้วเดินเชื่อมเข้าตลาดร่มหุบ<br>
+        • 🚂 <b>ไฮไลท์เวลารถไฟ:</b> รอชมขบวนรถไฟ <b>ขาออกจากสถานีแม่กลอง เวลา 15.30 น.</b> (หากออกจากบ้านพี่แจ้วเร็วจะทันชมขบวนขาเข้าเวลา 14.30 น.)</div>
+      </td>
+    </tr>
+    <tr>
+      <td class="t-d1">16.30 – 20.00 น.</td>
+      <td style="background:#FAF7F5;">
+        <div class="act-title">เดินชิล ตลาดน้ำอัมพวา &amp; ล่องเรือชมหิ่งห้อยยามค่ำ</div>
+        <div class="act-desc">• อิ่มอร่อยกับมื้อเย็นริมคลองอัมพวา ชิมกุ้งเผา หอยเชลล์ย่างเนย หมึกย่าง ก๋วยเตี๋ยวเรือ และขนมไทยโบราณ<br>
+        • ✨ <b>ไฮไลท์ช่วงค่ำ (18.30–19.30 น.):</b> ล่องเรือหางยาวชมหิ่งห้อยระยิบระยับใต้ต้นลำพูริมแม่น้ำ (คนละประมาณ 60–80 บาท) ก่อนกลับเข้าที่พัก</div>
+      </td>
+    </tr>
+  </table>
+
+  <!-- DAY 2 PHOTO STRIP (Real Photos) -->
+  <div class="day2-photo-strip">
+    <div class="strip-card">
+      <img src="watermarked_img_11765534847933246447.jpg" onerror="this.onerror=null;this.src='https://commons.wikimedia.org/wiki/Special:FilePath/Tha_Kha_Floating_Market.jpg?width=500';" alt="ตลาดน้ำท่าคา">
+      <div class="strip-info">
+        <b>🛶 ตลาดน้ำท่าคา &amp; วิถีริมคลอง</b>
+        สัมผัสวิถีชาวสวนมะพร้าวแท้ๆ ยามเช้า
+      </div>
+    </div>
+    <div class="strip-card">
+      <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Wat_Bang_Kung_-_01.jpg?width=500" alt="วัดบางกุ้ง">
+      <div class="strip-info">
+        <b>🌿 โบสถ์ปรกโพธิ์ วัดบางกุ้ง</b>
+        กราบหลวงพ่อนิลมณีในโบสถ์รากไม้ 4 ชนิด
+      </div>
+    </div>
+    <div class="strip-card">
+      <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Nativity_of_Our_Lady_Cathedral,_Bang_Nok_Khwaek_(I).jpg?width=500" alt="อาสนวิหารแม่พระบังเกิด">
+      <div class="strip-info">
+        <b>⛪ อาสนวิหารแม่พระบังเกิด</b>
+        โบสถ์คริสต์โกธิกอายุกว่า 100 ปีริมน้ำ
+      </div>
+    </div>
+  </div>
+
+  <!-- DAY 2 SCHEDULE -->
+  <div class="day-header day2-bg">🗓️ DAY 2 : วันอาทิตย์ที่ 25 ตุลาคม — ตักบาตรบ้านพี่แจ้ว • มื้อเช้าที่รีสอร์ท • วัดบางกุ้ง • มื้อเที่ยงริมน้ำ</div>
+  <table class="sched">
+    <tr>
+      <td class="t-d2">06.00 – 07.15 น.</td>
+      <td>
+        <div class="act-title">ตักบาตรพระพายเรือยามเช้า ณ ศาลาริมน้ำบ้านพี่แจ้ว</div>
+        <div class="act-desc">ออกเดินทางจากรีสอร์ทแต่เช้าตรู่ เพื่อไปร่วมทำบุญใส่บาตรพระสงฆ์พายเรือรับบิณฑบาตริมสายน้ำ ณ ศาลาริมน้ำบ้านพี่แจ้ว</div>
+      </td>
+    </tr>
+    <tr>
+      <td class="t-d2">07.30 – 09.00 น.</td>
+      <td style="background:#F5FAF6;">
+        <div class="act-title">รับประทานอาหารเช้า ณ โรงแรมบ้านศิริพร รีสอร์ท &amp; พักผ่อนตามอัธยาศัย</div>
+        <div class="act-desc">กลับมารับประทานมื้อเช้าที่ห้องอาหารของรีสอร์ท (ข้าวต้มเครื่อง ไข่ดาว ขนมปัง กาแฟ ผลไม้) จิบกาแฟชมวิวแม่น้ำแม่กลอง และเตรียมตัวเก็บสัมภาระ</div>
+      </td>
+    </tr>
+    <tr>
+      <td class="t-d2">09.30 – 10.45 น.</td>
+      <td>
+        <div class="act-title">เที่ยวชม ตลาดน้ำท่าคา &amp; คาเฟ่ในสวนมะพร้าว (ตัวเลือกเสริม — ตัดออกได้หากไม่ทัน)</div>
+        <div class="act-desc">• สัมผัสตลาดน้ำวิถีชาวสวนแท้ๆ แวะจิบกาแฟที่ <b>หายใจทิ้ง The Craft Cafe</b> หรือ <b>ตาลพวา</b><br>
+        • 💡 <i>หมายเหตุ: หากต้องการพักผ่อนที่รีสอร์ทสบายๆ ช่วงสาย สามารถตัดรายการนี้ออก แล้วเช็คเอาท์ตอน 11.00 น. เพื่อตรงไปวัดบางกุ้งได้เลย</i></div>
+      </td>
+    </tr>
+    <tr>
+      <td class="t-d2">11.00 – 12.15 น.</td>
+      <td style="background:#F5FAF6;">
+        <div class="act-title">Check-out จากที่พัก ➔ ชมความมหัศจรรย์ "โบสถ์ปรกโพธิ์" ณ วัดบางกุ้ง (ไฮไลท์หลัก)</div>
+        <div class="act-desc">สักการะ "หลวงพ่อนิลมณี" ภายในพระอุโบสถเก่าแก่สมัยอยุธยาที่โอบล้อมด้วยรากไม้ใหญ่ 4 ชนิด (โพธิ์ ไทร ไกร กร่าง) อย่างน่าอัศจรรย์</div>
+      </td>
+    </tr>
+    <tr>
+      <td class="t-d2">12.20 – 12.50 น.</td>
+      <td>
+        <div class="act-title">อาสนวิหารแม่พระบังเกิด บางนกแขวก (ตัวเลือกเสริม — ตัดออกได้หากไม่ทัน)</div>
+        <div class="act-desc">ชมโบสถ์คริสต์สถาปัตยกรรมโกธิกอายุกว่า 100 ปีริมน้ำ <i>(หากลูกทัวร์เริ่มหิว สามารถข้ามจุดนี้แล้วตรงไปร้านอาหารมื้อเที่ยงได้ทันที)</i></div>
+      </td>
+    </tr>
+    <tr>
+      <td class="t-d2">13.00 – 15.00 น.</td>
+      <td style="background:#F5FAF6;">
+        <div class="act-title">มื้อเที่ยงสุดพิเศษ &amp; นั่งชิลคาเฟ่ริมแม่น้ำแม่กลองก่อนกลับกรุงเทพฯ (เลือก 1 สไตล์)</div>
+        <div class="act-desc">• <b>ตัวเลือกที่ 1: The Pomelo Amphawa (ครัวส้มโอหวาน) &amp; Cafe The Pomelo</b> — ทานอาหารริมน้ำและจิบกาแฟส้มโอในคาเฟ่เรือนกระจกยาวๆ ถึง 15.00 น.<br>
+        • <b>ตัวเลือกที่ 2: รัญจวน อัมพวา</b> — ร้านอาหารไทยพื้นบ้านรสจัดจ้าน ตกแต่งสไตล์งานศิลปะอบอุ่นริมแม่น้ำแม่กลอง</div>
+      </td>
+    </tr>
+    <tr>
+      <td class="t-d2">15.00 น. เป็นต้นไป</td>
+      <td>
+        <div class="act-title">แวะซื้อของฝากระหว่างทาง และเดินทางกลับกรุงเทพมหานครโดยสวัสดิภาพ</div>
+        <div class="act-desc">เลือกซื้อปลาทูแม่กลองหน้างอคอหัก น้ำตาลมะพร้าวแท้ ส้มโอขาวใหญ่ และกะปิคลองโคน ก่อนเดินทางกลับกรุงเทพฯ</div>
+      </td>
+    </tr>
+  </table>
+
+  <div class="footer-grid">
+    <div class="tip-box1">
+      <div class="tip-h1">📌 ข้อแนะนำสำหรับลูกทัวร์ (Travel Tips)</div>
+      • <b>การแต่งกาย:</b> เสื้อผ้าระบายอากาศได้ดี รองเท้าเดินสบาย ชุดสุภาพสำหรับตักบาตรและเข้าวัด<br>
+      • <b>อุปกรณ์แนะนำ:</b> ร่มพับ หมวก แว่นกันแดด พัดลมพกพา และเงินสดย่อย/สแกนจ่ายในตลาดน้ำ
+    </div>
+    <div class="tip-box2">
+      <div class="tip-h2">📍 สรุปพิกัดสำคัญประจำทริป</div>
+      • <b>ร้านแดงอาหารทะเล:</b> maps.app.goo.gl/YGtNXf9Y1cF2Ctgj6<br>
+      • <b>บ้านศิริพร รีสอร์ท:</b> maps.app.goo.gl/zjCbTdc5bZ2hW98y9<br>
+      • <b>บ้านพี่แจ้ว (ศาลเจ้ากวนอู):</b> maps.app.goo.gl/oYZwKapqmzNXeMMD8
+    </div>
+  </div>
+
+</div>
+</body>
+</html>
