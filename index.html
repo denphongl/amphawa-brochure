@@ -100,6 +100,8 @@
   .strip-card .ph { width: 42%; aspect-ratio: auto; min-height: 82px; flex-shrink: 0; }
   .strip-card .ph::before { font-size: 24px; }
   .strip-info { padding: 7px 10px; font-size: 8.6pt; color: var(--ink-soft); }
+  .day2-photo-strip.two { grid-template-columns: 1fr 1fr; margin-bottom: 4px; }
+  .strip-info .map-link { font-size: 8.4pt; }
   .strip-info b { color: var(--tangchae); font-size: 9.2pt; display: block; margin-bottom: 2px; }
 
   /* ===== Footer ===== */
@@ -120,7 +122,7 @@
     body { padding: 6px; }
     .container { padding: 10px; }
     .gallery-grid { grid-template-columns: repeat(2, 1fr); }
-    .day2-photo-strip, .footer-grid { grid-template-columns: 1fr; }
+    .day2-photo-strip, .day2-photo-strip.two, .footer-grid { grid-template-columns: 1fr; }
     .banner-title { font-size: 17pt; }
     .t-d1, .t-d2 { white-space: normal; width: 26%; }
   }
@@ -180,8 +182,8 @@
       </div>
       <div class="photo-caption">
         <div class="photo-tag">เย็น–ค่ำวันแรก</div>
-        <div class="photo-title">ตลาดน้ำอัมพวา &amp; หิ่งห้อย</div>
-        <div class="photo-desc">เดินริมคลอง ชิมของปิ้งย่างจากเรือ ล่องเรือชมหิ่งห้อยยามค่ำ</div>
+        <div class="photo-title">ตลาดน้ำอัมพวา &amp; ดนตรีสดร้านนารา</div>
+        <div class="photo-desc">เดินชิมริมคลองยามเย็น ต่อด้วยมื้อค่ำพร้อมดนตรีสด</div>
       </div>
     </div>
 
@@ -192,14 +194,14 @@
       </div>
       <div class="photo-caption">
         <div class="photo-tag">วันที่สอง</div>
-        <div class="photo-title">ตักบาตรริมน้ำ &amp; วัดบางกุ้ง</div>
-        <div class="photo-desc">ใส่บาตรศาลาริมน้ำบ้านพี่แจ้ว ไหว้โบสถ์ปรกโพธิ์ แวะคาเฟ่ริมน้ำ</div>
+        <div class="photo-title">ตักบาตร วัดบางกุ้ง &amp; วัดจุฬามณี</div>
+        <div class="photo-desc">ใส่บาตรริมน้ำ ไหว้โบสถ์ปรกโพธิ์ ขอพรท้าวเวสสุวรรณ</div>
       </div>
     </div>
   </section>
 
   <!-- ===== DAY 1 ===== -->
-  <div class="day-header day1-bg"><span class="d">วันที่ ๑</span>เสาร์ 24 ต.ค. | ซีฟู้ด • บ้านพี่แจ้ว • ตลาดร่มหุบ • อัมพวา</div>
+  <div class="day-header day1-bg"><span class="d">วันที่ ๑</span>เสาร์ 24 ต.ค. | ซีฟู้ด • บ้านพี่แจ้ว • ตลาดร่มหุบ • อัมพวา • ดนตรีสดนารา</div>
   <table class="sched">
     <tr>
       <td class="t-d1">10.30 – 12.15 น.</td>
@@ -217,15 +219,7 @@
       </td>
     </tr>
     <tr>
-      <td class="t-d1">13.30 – 14.15 น.</td>
-      <td>
-        <div class="act-title">Check-in บ้านศิริพร รีสอร์ท</div>
-        <div class="act-desc">เก็บสัมภาระ พักผ่อนริมแม่น้ำแม่กลอง <span class="note">(โปรดยืนยันกับรีสอร์ทล่วงหน้าเรื่องเช็คอินก่อน 14.00 น.)</span><br>
-        📍 <a class="map-link" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&amp;query=13.3977077%2C99.9937999">เปิดแผนที่บ้านศิริพร รีสอร์ท</a></div>
-      </td>
-    </tr>
-    <tr>
-      <td class="t-d1">14.15 – 15.00 น.</td>
+      <td class="t-d1">13.30 – 14.10 น.</td>
       <td>
         <div class="act-title">เยี่ยมบ้านพี่แจ้ว (แถวศาลเจ้ากวนอู)</div>
         <div class="act-desc">พบปะพูดคุย และนัดเวลาตักบาตรที่ศาลาริมน้ำสำหรับเช้าวันอาทิตย์<br>
@@ -233,29 +227,65 @@
       </td>
     </tr>
     <tr>
-      <td class="t-d1">15.00 – 16.00 น.</td>
+      <td class="t-d1">14.15 – 15.40 น.</td>
       <td>
         <div class="act-title">ตลาดร่มหุบ &amp; ไหว้หลวงพ่อบ้านแหลม วัดเพชรสมุทรวรวิหาร</div>
         <div class="act-desc">• จอดรถที่วัดเพชรสมุทรฯ กราบขอพรหลวงพ่อบ้านแหลม แล้วเดินต่อเข้าตลาดร่มหุบ<br>
-        • 🚂 <b>เวลารถไฟ:</b> ขบวนออกจากสถานีแม่กลอง <b>15.30 น.</b> (ถ้าออกจากบ้านพี่แจ้วเร็ว จะทันขบวนเข้า 14.30 น.)
-        <span class="note">— ตารางเดินรถอาจเปลี่ยน ตรวจสอบกับการรถไฟฯ ก่อนวันเดินทาง</span><br>
+        • 🚂 <b>เวลารถไฟ:</b> ทันชมทั้ง 2 ขบวน คือ <b>ขบวนเข้า 14.30 น.</b> และ <b>ขบวนออก 15.30 น.</b>
+        <span class="note">— ตารางเดินรถอาจเปลี่ยน ตรวจสอบกับการรถไฟฯ ก่อนวันเดินทาง • สัมภาระยังอยู่ในรถ อย่าวางของมีค่าให้เห็นจากภายนอก</span><br>
         📍 <a class="map-link" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&amp;query=Wat%20Phet%20Samut%20Worawihan&amp;query_place_id=ChIJXUODFozT4jARQ6v1zs-e_0c">วัดเพชรสมุทรวรวิหาร (จุดจอดรถ)</a> &nbsp;•&nbsp; <a class="map-link" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&amp;query=Rom%20Hup%20Market&amp;query_place_id=ChIJi7qNj47T4jARKzETbJcDFTg">ตลาดร่มหุบ</a></div>
       </td>
     </tr>
+    <tr>
+      <td class="t-d1">15.45 – 16.15 น.</td>
+      <td>
+        <div class="act-title">Check-in บ้านศิริพร รีสอร์ท</div>
+        <div class="act-desc">เก็บสัมภาระ พักผ่อนริมแม่น้ำแม่กลอง <span class="note">(รีสอร์ทให้เช็คอินได้ตั้งแต่ 15.00 น.)</span><br>
+        📍 <a class="map-link" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&amp;query=13.3977077%2C99.9937999">เปิดแผนที่บ้านศิริพร รีสอร์ท</a></div>
+      </td>
+    </tr>
     <tr class="travel">
-      <td class="t-d1">16.00 – 16.30 น.</td>
-      <td>เดินทางจากตลาดร่มหุบไปตลาดน้ำอัมพวา (ประมาณ 15–20 นาที)</td>
+      <td class="t-d1">16.15 – 16.30 น.</td>
+      <td>เดินทางจากรีสอร์ทไปตลาดน้ำอัมพวา (ประมาณ 10–15 นาที)</td>
     </tr>
     <tr>
-      <td class="t-d1">16.30 – 20.00 น.</td>
+      <td class="t-d1">16.30 – 18.30 น.</td>
       <td>
-        <div class="act-title">ตลาดน้ำอัมพวา &amp; ล่องเรือชมหิ่งห้อย</div>
-        <div class="act-desc">• มื้อเย็นริมคลอง: กุ้งเผา หอยเชลล์ย่างเนย หมึกย่าง ก๋วยเตี๋ยวเรือ ขนมไทยโบราณ<br>
-        • ✨ <b>18.30–19.30 น.</b> ล่องเรือหางยาวชมหิ่งห้อยใต้ต้นลำพู (ประมาณคนละ 60–80 บาท) ก่อนกลับที่พัก<br>
-        📍 <a class="map-link" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&amp;query=Amphawa%20Floating%20Market&amp;query_place_id=ChIJW3z8Z7vV4jARB-7hOVZmvbM">ตลาดน้ำอัมพวา (จุดลงเรือหิ่งห้อย)</a></div>
+        <div class="act-title">ตลาดน้ำอัมพวายามเย็น</div>
+        <div class="act-desc">เดินเล่นริมคลอง ชิมของว่างจากเรือ เช่น กุ้งเผา หอยเชลล์ย่างเนย ขนมไทยโบราณ <span class="note">(ชิมพอหอมปากหอมคอ เก็บท้องไว้มื้อค่ำ)</span><br>
+        📍 <a class="map-link" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&amp;query=Amphawa%20Floating%20Market&amp;query_place_id=ChIJW3z8Z7vV4jARB-7hOVZmvbM">ตลาดน้ำอัมพวา</a></div>
+      </td>
+    </tr>
+    <tr class="travel">
+      <td class="t-d1">18.30 – 18.45 น.</td>
+      <td>เดินทางจากตลาดน้ำอัมพวาไปร้านนารา (ประมาณ 10 นาที)</td>
+    </tr>
+    <tr>
+      <td class="t-d1">18.45 – 22.00 น.</td>
+      <td>
+        <div class="act-title">มื้อค่ำ &amp; ฟังดนตรีสด ร้านนารา อัมพวา 🎶</div>
+        <div class="act-desc">ร้านอาหารไทยและบาร์บรรยากาศสบายๆ ฟังดนตรีสดยามค่ำ แล้วกลับเข้าที่พัก (ประมาณ 10 นาที)<br>
+        • <span class="note">แนะนำจองโต๊ะและสอบถามเวลาวงดนตรีล่วงหน้า (โทร 083 074 1307) • ผู้ขับรถควรงดแอลกอฮอล์</span><br>
+        📍 <a class="map-link" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&amp;query=NARA%20hostel%2C%20restaurant%20and%20bar&amp;query_place_id=ChIJ5_h5-Y3V4jARYNW4T262RA8">นารา อัมพวา (ร้านดนตรีสด)</a> &nbsp;•&nbsp; <a class="map-link" target="_blank" rel="noopener" href="https://www.facebook.com/nara.amphawa">Facebook นารา อัมพวา</a></div>
       </td>
     </tr>
   </table>
+
+  <!-- ===== ภาพประกอบช่วงค่ำวันที่ 1 ===== -->
+  <section class="day2-photo-strip two">
+    <div class="strip-card">
+      <div class="ph" data-icon="🛶">
+        <img alt="ตลาดน้ำอัมพวายามเย็น" data-srcs="images/amphawa.jpg">
+      </div>
+      <div class="strip-info"><b>ตลาดน้ำอัมพวา</b>เดินชิมริมคลองยามเย็น<br>📍 <a class="map-link" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&amp;query=Amphawa%20Floating%20Market&amp;query_place_id=ChIJW3z8Z7vV4jARB-7hOVZmvbM">ตลาดน้ำอัมพวา</a></div>
+    </div>
+    <div class="strip-card">
+      <div class="ph" data-icon="🎶">
+        <img alt="ร้านนารา อัมพวา ดนตรีสด" data-srcs="images/nara.jpg">
+      </div>
+      <div class="strip-info"><b>ร้านนารา อัมพวา</b>มื้อค่ำพร้อมดนตรีสด<br>📍 <a class="map-link" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&amp;query=NARA%20hostel%2C%20restaurant%20and%20bar&amp;query_place_id=ChIJ5_h5-Y3V4jARYNW4T262RA8">ร้านนารา อัมพวา</a></div>
+    </div>
+  </section>
 
   <!-- ===== ภาพประกอบวันที่ 2 ===== -->
   <section class="day2-photo-strip">
@@ -274,16 +304,16 @@
       <div class="strip-info"><b>โบสถ์ปรกโพธิ์ วัดบางกุ้ง</b>หลวงพ่อนิลมณีในโบสถ์ที่รากไม้ 4 ชนิดโอบไว้</div>
     </div>
     <div class="strip-card">
-      <div class="ph" data-icon="⛪">
-        <img alt="อาสนวิหารแม่พระบังเกิด บางนกแขวก"
-             data-srcs="images/cathedral.jpg | https://commons.wikimedia.org/wiki/Special:FilePath/Nativity_of_Our_Lady_Cathedral,_Bang_Nok_Khwaek_(I).jpg?width=600">
+      <div class="ph" data-icon="🙏">
+        <img alt="วัดจุฬามณี อัมพวา"
+             data-srcs="images/wat-chulamanee.jpg">
       </div>
-      <div class="strip-info"><b>อาสนวิหารแม่พระบังเกิด</b>โบสถ์โกธิกริมน้ำ อายุกว่า 100 ปี</div>
+      <div class="strip-info"><b>วัดจุฬามณี</b>ขอพรท้าวเวสสุวรรณ เสริมโชคลาภและการงาน</div>
     </div>
   </section>
 
   <!-- ===== DAY 2 ===== -->
-  <div class="day-header day2-bg"><span class="d">วันที่ ๒</span>อาทิตย์ 25 ต.ค. | ตักบาตร • ท่าคา • วัดบางกุ้ง • มื้อเที่ยงริมน้ำ</div>
+  <div class="day-header day2-bg"><span class="d">วันที่ ๒</span>อาทิตย์ 25 ต.ค. | ตักบาตร • ท่าคา • วัดบางกุ้ง • วัดจุฬามณี • มื้อเที่ยงริมน้ำ</div>
   <table class="sched">
     <tr>
       <td class="t-d2">06.00 – 07.15 น.</td>
@@ -311,7 +341,7 @@
       </td>
     </tr>
     <tr>
-      <td class="t-d2">11.00 – 12.15 น.</td>
+      <td class="t-d2">11.00 – 12.00 น.</td>
       <td>
         <div class="act-title">“โบสถ์ปรกโพธิ์” วัดบางกุ้ง (ไฮไลท์หลัก)</div>
         <div class="act-desc">สักการะ “หลวงพ่อนิลมณี” ในพระอุโบสถสมัยอยุธยา ที่รากไม้ใหญ่ 4 ชนิด (โพธิ์ ไทร ไกร กร่าง) โอบล้อมไว้ทั้งหลัง<br>
@@ -319,17 +349,18 @@
       </td>
     </tr>
     <tr>
-      <td class="t-d2">12.20 – 12.50 น.</td>
+      <td class="t-d2">12.15 – 13.15 น.</td>
       <td>
-        <div class="act-title">อาสนวิหารแม่พระบังเกิด บางนกแขวก <span class="opt">ตัดได้</span></div>
-        <div class="act-desc">โบสถ์คริสต์สถาปัตยกรรมโกธิกริมน้ำ อายุกว่า 100 ปี <span class="note">(ถ้าเริ่มหิว ข้ามไปร้านอาหารได้เลย)</span><br>
-        📍 <a class="map-link" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&amp;query=Nativity%20of%20Our%20Lady%20Cathedral&amp;query_place_id=ChIJhZ-C3bfX4jARCcFd5n1e2xM">อาสนวิหารแม่พระบังเกิด</a></div>
+        <div class="act-title">วัดจุฬามณี ขอพรท้าวเวสสุวรรณ (ไฮไลท์)</div>
+        <div class="act-desc">กราบสักการะ “ท้าวเวสสุวรรณ” ที่ผู้คนเลื่อมใสมาขอพรด้านโชคลาภ การงาน ความสำเร็จ และให้คุ้มครองป้องกันภัย พร้อมชมพระอุโบสถหินอ่อนที่งดงามของวัด<br>
+        • <span class="note">ชุดดอกไม้ธูปเทียนมีจำหน่ายในวัด • ช่วงเที่ยงแดดแรง พกร่มและหมวก • วันอาทิตย์คนเยอะ ที่จอดรถอาจหายาก</span><br>
+        📍 <a class="map-link" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&amp;query=Wat%20Chulamanee&amp;query_place_id=ChIJc4MGxjzU4jARaPjRKcf1g7g">วัดจุฬามณี</a></div>
       </td>
     </tr>
     <tr>
-      <td class="t-d2">13.00 – 15.00 น.</td>
+      <td class="t-d2">13.30 – 15.00 น.</td>
       <td>
-        <div class="act-title">มื้อเที่ยงริมแม่น้ำแม่กลอง (เลือก 1 ร้าน)</div>
+        <div class="act-title">มื้อเที่ยงริมแม่น้ำแม่กลอง (เลือก 1 ร้าน ห่างจากวัดจุฬามณีราว 5–10 นาที)</div>
         <div class="act-desc">• <b>The Pomelo Amphawa (ครัวส้มโอหวาน) &amp; Cafe The Pomelo</b> — อาหารริมน้ำ ต่อด้วยกาแฟส้มโอในคาเฟ่เรือนกระจก<br>
         • <b>รัญจวน อัมพวา</b> — อาหารไทยพื้นบ้านรสจัดจ้าน ตกแต่งสไตล์งานศิลปะริมแม่น้ำ<br>
         📍 <a class="map-link" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&amp;query=The%20Pomelo%20Amphawa&amp;query_place_id=ChIJu7WVb8XV4jAR3uTSS865JCI">The Pomelo Amphawa</a> &nbsp;•&nbsp; <a class="map-link" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&amp;query=Ranjuan%20Amphawa&amp;query_place_id=ChIJf_DXwDvU4jARZd6rdBSFPwg">รัญจวน อัมพวา</a></div>
@@ -349,7 +380,7 @@
       <h3>ข้อแนะนำการเดินทาง</h3>
       <ul>
         <li><b>การแต่งกาย:</b> เสื้อผ้าระบายอากาศดี รองเท้าเดินสบาย ชุดสุภาพสำหรับตักบาตรและเข้าวัด</li>
-        <li><b>ของที่ควรพก:</b> ร่มพับ หมวก แว่นกันแดด ยากันยุง (ช่วงล่องเรือหิ่งห้อย) เงินสดย่อย/สแกนจ่าย</li>
+        <li><b>ของที่ควรพก:</b> ร่มพับ หมวก แว่นกันแดด ยากันยุง (ช่วงค่ำริมน้ำ) เงินสดย่อย/สแกนจ่าย</li>
       </ul>
     </div>
   </section>
@@ -362,12 +393,13 @@
         <li><a class="map-link" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&amp;query=13.398962%2C99.994922">บ้านพี่แจ้ว (ศาลเจ้ากวนอู)</a></li>
         <li><a class="map-link" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&amp;query=Wat%20Phet%20Samut%20Worawihan&amp;query_place_id=ChIJXUODFozT4jARQ6v1zs-e_0c">วัดเพชรสมุทรวรวิหาร (จุดจอดรถ)</a></li>
         <li><a class="map-link" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&amp;query=Rom%20Hup%20Market&amp;query_place_id=ChIJi7qNj47T4jARKzETbJcDFTg">ตลาดร่มหุบ</a></li>
-        <li><a class="map-link" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&amp;query=Amphawa%20Floating%20Market&amp;query_place_id=ChIJW3z8Z7vV4jARB-7hOVZmvbM">ตลาดน้ำอัมพวา (จุดลงเรือหิ่งห้อย)</a></li>
+        <li><a class="map-link" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&amp;query=Amphawa%20Floating%20Market&amp;query_place_id=ChIJW3z8Z7vV4jARB-7hOVZmvbM">ตลาดน้ำอัมพวา</a></li>
+        <li><a class="map-link" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&amp;query=NARA%20hostel%2C%20restaurant%20and%20bar&amp;query_place_id=ChIJ5_h5-Y3V4jARYNW4T262RA8">นารา อัมพวา (ร้านดนตรีสด)</a></li>
         <li><a class="map-link" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&amp;query=Tha%20Kha%20Floating%20Market&amp;query_place_id=ChIJ46WQki3R4jARVL5gg6D4wE0">ตลาดน้ำท่าคา</a></li>
         <li><a class="map-link" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&amp;query=%E0%B8%AB%E0%B8%B2%E0%B8%A2%E0%B9%83%E0%B8%88%E0%B8%97%E0%B8%B4%E0%B9%89%E0%B8%87%20the%20Craft%20Cafe&amp;query_place_id=ChIJ84qiFpzR4jARvQy_jDvpyZg">หายใจทิ้ง The Craft Cafe</a></li>
         <li><a class="map-link" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&amp;query=Tarnpawa&amp;query_place_id=ChIJeUhWFsfX4jARO9CkjO9c8Hs">ตาลพวา</a></li>
         <li><a class="map-link" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&amp;query=Wat%20Bang%20Kung&amp;query_place_id=ChIJkfZkC3zW4jARohcUWbdk9oo">วัดบางกุ้ง</a></li>
-        <li><a class="map-link" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&amp;query=Nativity%20of%20Our%20Lady%20Cathedral&amp;query_place_id=ChIJhZ-C3bfX4jARCcFd5n1e2xM">อาสนวิหารแม่พระบังเกิด</a></li>
+        <li><a class="map-link" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&amp;query=Wat%20Chulamanee&amp;query_place_id=ChIJc4MGxjzU4jARaPjRKcf1g7g">วัดจุฬามณี</a></li>
         <li><a class="map-link" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&amp;query=The%20Pomelo%20Amphawa&amp;query_place_id=ChIJu7WVb8XV4jAR3uTSS865JCI">The Pomelo Amphawa</a></li>
         <li><a class="map-link" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&amp;query=Ranjuan%20Amphawa&amp;query_place_id=ChIJf_DXwDvU4jARZd6rdBSFPwg">รัญจวน อัมพวา</a></li>
     </ol>
